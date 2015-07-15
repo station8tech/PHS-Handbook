@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	
+	 <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5.min.css" /> 
+	
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="jquery.mobile-1.4.5.min.js"></script>
+
+
+<script src="cordova.js"></script>
+   <script src="app.js"></script>
+    
+</head>
+<style type="text/css">
+    .ui-header .ui-title {margin: 0 20%}
+</style>
+
+
+<body>
+      
+     
+   
+    
+    <div data-role="page" id="page" >
+	   
+	   
+	     
+       
+    <div data-role="header" data-theme="a"  data-id="persistent" data-position="fixed" >
+	   <br>
+	   <center><img src="providence_icon.png" width="300"></center>
+       <h1 class="header-title">Our Lady of Providence Junior-Senior High School Teachers</h1>
+     <a href="#search" data-icon="search" data-iconpos="notext" class="ui-btn-right"></a>
+     
+     
+<div data-role="navbar" data-theme="a">
+	<ul>
+		<li><a href="#page"><center>Teacher List</center></a></li>
+		<li><a  href="#" onclick=window.open('http://www.providencehigh.net','_blank','location=no,allowInlineMediaPlayback=yes')><center>ProvidenceHigh.net</center></a></li>
+		<li  data-icon="false"><a href="#" onclick=window.open('https://skyward.providencehigh.net/scripts/wsisa.dll/WService=wsEAplus/mobile.w','_blank','location=no,allowInlineMediaPlayback=yes')><center>Skyward Family Access</center></a></li>
+	</ul>
+</div><!-- /navbar -->
+         
+         </div>
+   
+         
+         
+        
+         <ul data-role="listview" data-inset="false"  id="teacherList"></ul>
+         
+         
+    </div> 
+    
+    
+    
+     <div data-role="page" id="page2" >
+      
+                      
+     <div data-role="header" data-theme="a"  data-id="persistent" data-position="fixed" data-tap-toggle="false"  >
+	   <br>
+	   <center><img src="providence_icon.png" width="300"></center>
+	    <a href="#" onClick="history.go(-1)"  data-icon="back" data-iconpos="notext"></a>
+	    
+       <h1 class="header-title" id="teacherName"></h1>
+       <a href="#search" data-icon="search" data-iconpos="notext"></a>
+<div data-role="navbar" data-theme="a">
+	<ul>
+		<li  data-icon="false"><a href="#page"><center>Teacher List</center></a></li>
+		<li  data-icon="false"><a  href="#" onclick=window.open('http://www.providencehigh.net','_blank','location=no,allowInlineMediaPlayback=yes')><center>ProvidenceHigh.net</center></a></li>
+		<li  data-icon="false"><a href="#" onclick=window.open('https://skyward.providencehigh.net/scripts/wsisa.dll/WService=wsEAplus/mobile.w','_system','location=no,allowInlineMediaPlayback=yes')><center>Skyward Family Access</center></a></li>
+	</ul>
+</div><!-- /navbar -->
+
+         </div>
+        
+         <ul data-role="listview"  data-inset="false" data-theme="a" id="classList"></ul>
+    </div> 
+    
+    
+    
+    
+  
+  
+  <div data-role="page" id="page3" >
+      
+                      
+     <div data-role="header" data-theme="a"  data-id="persistent" data-position="fixed" >
+	      <br>
+	   <center><img src="providence_icon.png" width="300"></center>
+	    <a href="#" onClick="history.go(-1)"  data-icon="back" data-iconpos="notext"></a>
+	    
+       <h1 class="header-title" id="contentHeaderName" ></h1>
+     <a href="#search" data-icon="search" data-iconpos="notext"></a>
+<div data-role="navbar" data-theme="a">
+	<ul>
+		<li  data-icon="false"><a href="#page"><center>Teacher List</center></a></li>
+		<li  data-icon="false"><a  href="#" onclick=window.open('http://www.providencehigh.net','_blank','location=no,allowInlineMediaPlayback=yes')><center>ProvidenceHigh.net</center></a></li>
+		<li  data-icon="false"><a href="#" onclick=window.open('https://skyward.providencehigh.net/scripts/wsisa.dll/WService=wsEAplus/mobile.w','_system','location=no,allowInlineMediaPlayback=yes')><center>Skyward Family Access</center></a></li>
+	</ul>
+</div><!-- /navbar -->
+         </div>
+         <ul data-role="listview" data-inset="false" data-theme="a" id="contentList"></ul>
+    </div> 
+    
+    
+    
+    
+      <div data-role="page" id="page4"  >
+      
+                        
+                      
+      <div data-role="header" data-theme="a"  data-id="persistent" data-position="fixed" >
+	       <br>
+	   <center><img src="providence_icon.png" width="300"></center>
+	    <a href="#" onClick="history.go(-1)"  data-icon="back" data-iconpos="notext"></a>
+	    
+       <h1 class="header-title" id="fileHeaderName"></h1>
+     <a href="#search" data-icon="search" data-iconpos="notext"></a>
+<div data-role="navbar" data-theme="a">
+	<ul>
+		<li data-icon="false"><a href="#page"><center>Teacher List</center></a></li>
+		<li  data-icon="false"><a  href="#" onclick=window.open('http://www.providencehigh.net','_blank','location=no,allowInlineMediaPlayback=yes')><center>ProvidenceHigh.net</center></a></li>
+		<li  data-icon="false"><a href="#" onclick=window.open('https://skyward.providencehigh.net/scripts/wsisa.dll/WService=wsEAplus/mobile.w','_system','location=no,allowInlineMediaPlayback=yes')><center>Skyward Family Access</center></a></li>
+	</ul>
+</div><!-- /navbar -->
+         </div>
+        
+         <ul data-role="listview" data-split-icon="action" data-split-theme="a" data-inset="false" data-theme="a" id="documentList"></ul>
+    </div> 
+    
+    
+    
+    
+     <div data-role="page" id="search"  >
+      
+                        
+                      
+      <div data-role="header" data-theme="a"  data-id="persistent" data-position="fixed" >
+	       <br>
+	   <center><img src="providence_icon.png" width="300"></center>
+	    <a href="#" onClick="history.go(-1)"  data-icon="back" data-iconpos="notext"></a>
+	    
+       <h1 class="header-title">PHSiTeach Search</h1>
+     <a href="#search" data-icon="search" data-iconpos="notext"></a>
+<div data-role="navbar" data-theme="a">
+	<ul>
+		<li data-icon="false"><a href="#page"><center>Teacher List</center></a></li>
+		<li  data-icon="false"><a  href="#" onclick=window.open('http://www.providencehigh.net','_blank','location=no,allowInlineMediaPlayback=yes')><center>ProvidenceHigh.net</center></a></li>
+	<li  data-icon="false"><a href="#" onclick=window.open('https://skyward.providencehigh.net/scripts/wsisa.dll/WService=wsEAplus/mobile.w','_system','location=no,allowInlineMediaPlayback=yes')><center>Skyward Family Access</center></a></li>
+	</ul>
+</div><!-- /navbar -->
+         </div>
+         <p align="center">Search any part of the teacher file name.</p>
+         <form action="#" method="post" id="searchForm">
+                    <input type="search"  id="userSearch" data-mini="true"
+                    value=""  autocorrect="off" autocomplete="off" autocapitalize="off" />
+              
+                <input type="submit" value="Search"  data-theme="a"/>
+                </form>
+         
+         <ul data-role="listview" data-split-icon="action" data-split-theme="a" data-inset="false" data-theme="a" id="searchList"></ul>
+    </div> 
+   
+    
+    
+    
+    
+     
+   
+    
+    
+</body>
+</html>
