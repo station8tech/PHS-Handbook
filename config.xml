@@ -6,7 +6,7 @@
 <gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
 <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
 <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
-<gap:plugin name="nl.x-services.plugins.backgroundaudio" version="1.0.0" />
+
 
 <gap:platform name="ios" />
 <preference name="webviewbounce" value="false" />
@@ -20,7 +20,7 @@
 
 <access origin="*" />
 <description>
-Since Providence High School is a one to one iPad school, students will now have the ability to carry their handbook with them at all times on their iPad. The handbook app is an easy reference site for all the important documents relating to school polices. The handbook also features an appendix with other important documents that will benefit both parents and students. The app supports both portrait and landscape modes and also features easily readable files.
+Since Providence High School is a one to one iPad school, students will now have the ability to carry their handbook with them at all times on their iPad. The handbook app is an easy reference site for all the important documents relating to school polices. The app supports both portrait and landscape modes and also features easily readable files.
 </description>
 
 <author href="https://www.stat8.net" email="support@stat8.net">
